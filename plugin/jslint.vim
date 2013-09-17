@@ -7,7 +7,7 @@ function! JSLintQuick(hide_empty)
 				set grepformat&vim
 				set grepformat&vim
 				let &grepformat = '%f(%l):%m'
-				let &grepprg = "jsl -nologo -nofilelisting -nosummary -nocontext -conf /etc/jsl.conf -process"
+				let &grepprg = "jslint"
 
 				if &readonly == 0 | update | endif
 				silent! grep! %
